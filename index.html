@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Register</h2>
+      <form id="registrationForm">
+        Name:
+        <input type="text" id="name" placeholder="Full Name" required />
+        Age:
+        <input type="number" id="age" placeholder="Enter your age.." required />
+        Gender:
+        <div class="gender-group">
+          <label
+            ><input type="radio" name="gender" value="male" id="male" />
+            Male</label
+          >
+          <label
+            ><input type="radio" name="gender" value="female" id="female" />
+            Female</label
+          >
+        </div>
+        <br>
+        Email:
+        <input type="email" id="email" placeholder="Email Address" required />
+        Password:
+        <input type="password" id="password" placeholder="Password" required />
+
+        <button type="submit">Save</button>
+        <p id="message"></p>
+      </form>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
